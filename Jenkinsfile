@@ -1,9 +1,10 @@
 pipeline {
-  agent {
-    label 'jdk9'
-  }
+  agent none
   stages {
     stage('Say Hello') {
+      agent {
+        label 'jdk9'
+      }
       steps {
         echo "Hello ${params.Name}!!!!1"
         sh 'java -version'
