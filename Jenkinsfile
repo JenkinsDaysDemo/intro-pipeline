@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'jdk8'
+    label 'jdk9'
   }
   libraries {
     lib("SharedLibs")
